@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        {% load static %}
+        <script src="{% static 'testing.js' %}"></script>
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    </head>
+    <body>
+    <label>{{ description }}</label></br>
+    <input type="text" class="testTXT" value="{{ iID }}" id="txtItemID"></br>
+    <input type="text" class="testTXT" value="{{ nID }}" id="txtNodeID"></br>
+    <input type="text" class="testTXT" value="-" id="txtNodeID2"></br>
+    <input type="button" class="testBTN" value="New item" id="btnNewItm" onclick="testNewItem()">
+    <input type="button" class="testBTN" value="New addr" id="btnNewAdr" onclick="testNewAddress()">
+    <input type="button" class="testBTN" value="New transfer" id="btnTransfer" onclick="testTransfer()">
+    <input type="button" class="testBTN" value="List items" id="btnItems" onclick="testItems()">
+    </body>
+</html>

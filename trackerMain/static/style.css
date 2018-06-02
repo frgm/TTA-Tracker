@@ -1,0 +1,115 @@
+.sliding{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: #B1BDC4;
+    background-color: #98A9B2;
+}
+
+.slideClick{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: #B1BDC4;
+    background-color: #758C98;
+}
+
+
+@media (min-width:320px)  { 
+    body {
+        margin: auto;
+        max-width: 310px;
+        background-color: #758C98;
+        font-family: "Trebuchet MS", sans-serif;
+    }
+
+    .loginBody{
+        margin: auto;
+        max-width: 310px;
+        background-color: #D17A69;
+    }
+    
+    .main {
+        margin: auto;
+        max-width: 310px;
+    }
+    
+    img {
+        max-width: 20px;
+    }
+    
+    .mainImg {
+        max-width: 40px;
+    }
+}
+
+@media (min-width:481px)  {
+    body {
+        margin: auto;
+        max-width: 930px;
+        background-color: #758C98;
+        font-family: "Trebuchet MS", sans-serif;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 3px;
+        border-color: #B1BDC4;
+    }
+
+    .loginBody{
+        margin: auto;
+        max-width: 930px;
+        background-color: #D17A69;
+    }
+    
+    .main {
+        margin: auto;
+        max-width: 930px;
+    }
+    
+    img {
+        max-width: 60px;
+    }
+    
+    .mainImg {
+        max-width: 120px;
+    }
+}
+
+
+
+.mainLabel {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: #B1BDC4e;
+    background-color: #D17A69;
+}
+
+.login > label{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: #B1BDC4;
+    background-color: #758C98;
+}
+
+.login > input{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: #B1BDC4;
+}
+
+.rightMenuObj{
+    position: relative;
+    margin-left: auto;
+    left: 20px;
+}
+
+.menuDiv {
+    display: flex
+}
+
+.disabled label{
+    color: #aaa;
+}

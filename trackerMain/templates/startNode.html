@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        {% load static %}
+        <script type="text/javascript" src="{% static 'functions.js' %}"></script>
+        <script type="text/javascript" src="{% static 'jquery.qrcode.min.js' %}"></script>
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+        
+    </head>
+    <body>
+    <label>{{ description }}</label></br>
+    <input type="text" class="txt" value="{{ iID }}" id="txtItemID"><label>Item ID</label></br>
+    <input type="text" class="txt" value="{{ nID }}" id="txtNodeID"><label>Local Node ID</label></br>
+    <input type="text" class="txt" value="-" id="txtNodeID2"><label>Receiver Node ID</label></br>
+    <input type="button" class="btn" value="List items" id="btnListItems" onclick="listItem()">
+    <input type="button" class="btn" value="New item" id="btnNewItm" onclick="newItem()">
+    <input type="button" class="btn" value="Send item" id="btnSendItem" onclick="sendItem()">
+    <input type="button" class="btn" value="New address" id="btnNewAddress" onclick="newAddress()">
+    </br>
+    <label id="lblOut"></label>
+    </br>
+    <div id="divQR"></div>
+    </body>
+</html>
