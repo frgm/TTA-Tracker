@@ -36,7 +36,7 @@ class address(View):
         newAddr = mcapi.getnewaddress()
         r = md.DistributionNodes(address = newAddr, description = request.POST['description'])
         r.save()
-        mcapi.grant(newAddr,"connect,send,receive")
+        mcapi.grant(newAddr,"connect,send,receive,create,issue")
         return JsonResponse({'success': True, 'nodeID': r.pk, 'address': newAddr})
     
     #list transcations with address
